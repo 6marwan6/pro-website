@@ -1,0 +1,4 @@
+name in radio group them together so only one could be chosen
+for in label points at id in input not the value. value is used to send the input data to the server
+target in a makes the link go to new tab instead of the current tab
+<br> used to break so it forces the next element to start from a new line

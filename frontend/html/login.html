@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+
+
+  <div class="login-container-wrapper">
+    <div class="logo-container">
+      <img class="logo-img" src="../dataset/site-logo.png">
+      <h1>Sign in</h1>
+    </div>
+    <form class="login-form" action="/login" method="POST">
+      <div class="radio-container">
+        <label for="user">User</label>
+        <input type="radio" name="role" id="user" value="user" checked>
+        <label for="admin">Admin</label>
+        <input type="radio" name="role" id="admin" value="admin">
+      </div>
+
+      <div class="username-container">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+      </div>
+
+
+      <div class="password-container">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+      <a class="" href="about:blank" target="_blank">forget password? </a>
+      <br>
+      <button type="submit">Login</button>
+      <p>OR</p>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+</body>
+</html>
