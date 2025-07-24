@@ -1,18 +1,68 @@
 body{
+font-family: 'Roboto', sans-serif;
 margin: 10px;
 padding: 50px;
 
 }
+.username-container,.password-container{
+  position: relative;
 
+}
+
+.username-label{
+position: absolute;
+left: 10px;
+top: 12px;
+pointer-events: none;
+transition: all 0.2s ease;
+}
+.username-input{
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 12px 15px 9px 15px;
+  font-size: 16px;
+}
+button{
+  background-color: #f79022;
+  color: white;
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+button:hover{
+  background-color: #e67709;
+}
+.header1{
+  text-align: center;
+}
+.username-input:focus{
+  border-bottom: 2px solid #000000;
+}
+.username-input:focus + label,
+.username-input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 0px;
+  font-size: 14px;
+  color: #000000;
+}
 .login-container-wrapper {
 max-width: 500px;
 margin: 100px auto;
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: center;
 border: 1px solid #ccc;
-box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+
 }
 
 .logo-img{
@@ -25,4 +75,20 @@ margin: 10px;
 
 .password-container{
 margin: 10px;
+}
+.link{
+  display:block;
+  text-decoration:none;
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: lighter ;
+  color: #3880ff;
+}
+.radio-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px ;
+  margin: 20px auto;
+  
 }
